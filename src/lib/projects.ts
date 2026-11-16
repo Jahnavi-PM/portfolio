@@ -28,13 +28,13 @@ export const projects: Project[] = [
       "An embedded education-loan flow inside the university admission form, integrating Avanse, Fibe and Propelld with real-time status tracking.",
     contribution:
       "Defined the loan workflows and multi-lender experience, and drove launch with engineering and lending partners.",
-    impact: "5–7 → 1–2 day turnaround · 1,260 loan-funded students · ₹18 Cr+ admissions",
+    impact: "5–7 → 1–2 day turnaround · 1,200+ applications · ₹18 Cr+ admissions",
     problem:
       "Loan applications ran on manual coordination and Excel hand-offs between students, counsellors and lenders, with no real-time status — causing 5–7 day turnarounds and a poor experience.",
     work:
       "I defined the application workflows and a consistent multi-lender experience across Avanse, Fibe and Propelld, plus status tracking — coordinating engineering and partners through launch.",
     outcome:
-      "Turnaround dropped to 1–2 days, supporting 1,260 loan-funded students and ₹18 Cr+ in admissions for Jain University's Jan '26 intake.",
+      "Turnaround dropped to 1–2 days, supporting 1,200+ applications and ₹18 Cr+ in admissions for Jain University's Jan '26 intake.",
   },
   {
     id: "coupon-platform",
