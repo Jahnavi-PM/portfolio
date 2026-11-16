@@ -16,8 +16,13 @@ const mono = IBM_Plex_Mono({
   display: "swap",
 });
 
-// NOTE(deploy): update to your real production URL after deploying.
-const siteUrl = "https://jahnavi-kotana.vercel.app";
+// Uses Vercel's production domain automatically when deployed; falls back to a
+// local/placeholder URL otherwise. Set NEXT_PUBLIC_SITE_URL to pin a custom domain.
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "http://localhost:3000");
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
