@@ -15,7 +15,7 @@ export function Contact() {
     {
       icon: LinkedInIcon,
       label: "LinkedIn",
-      value: "/in/jahnavi-kotana",
+      value: "linkedin.com/in/jahnavi-kotana",
       href: profile.linkedin,
       external: true,
     },
