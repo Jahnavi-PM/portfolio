@@ -74,7 +74,6 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col gap-2 border-t border-navy-line pt-6 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
           <p>© {year} Jahnavi Kotana. All rights reserved.</p>
-          <p>Designed &amp; built with care · Next.js + Tailwind CSS</p>
         </div>
       </div>
     </footer>
