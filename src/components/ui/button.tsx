@@ -44,7 +44,9 @@ export function ButtonLink({
   children,
 }: ButtonAsLink) {
   const classes = cn(base, variants[variant], sizes[size], className);
-  if (external || download) {
+  // In-page hash links use a native anchor so the browser replaces the
+  // fragment (Next's <Link> appends hashes, producing "#top#work#contact").
+  if (external || download || href.startsWith("#")) {
     return (
       <a
         href={href}

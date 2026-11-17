@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { Menu, X, Download } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { navLinks, profile } from "@/lib/data";
@@ -34,8 +33,8 @@ export function Navbar() {
       )}
     >
       <nav className="container-px mx-auto flex h-16 max-w-6xl items-center justify-between">
-        <Link
-          href="/#top"
+        <a
+          href="#top"
           className="group flex items-center gap-2.5"
           aria-label="Jahnavi Kotana — home"
         >
@@ -45,17 +44,17 @@ export function Navbar() {
           <span className="hidden text-sm font-semibold tracking-tight text-ink sm:block">
             Jahnavi Kotana
           </span>
-        </Link>
+        </a>
 
         <div className="hidden items-center gap-1 md:flex">
           {navLinks.map((link) => (
-            <Link
+            <a
               key={link.href}
               href={link.href}
               className="rounded-full px-3.5 py-2 text-sm text-ink-soft transition-colors hover:bg-surface-2 hover:text-ink"
             >
               {link.label}
-            </Link>
+            </a>
           ))}
           <a
             href={profile.resumePath}
@@ -82,14 +81,14 @@ export function Navbar() {
         <div className="border-t border-line bg-bg md:hidden">
           <div className="container-px mx-auto flex max-w-6xl flex-col py-3">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
                 className="rounded-lg px-3 py-3 text-base text-ink-soft hover:bg-surface-2"
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
             <a
               href={profile.resumePath}

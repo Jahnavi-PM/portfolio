@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Mail, ArrowUpRight } from "lucide-react";
 import { LinkedInIcon } from "@/components/ui/icons";
 import { navLinks, profile } from "@/lib/data";
@@ -28,12 +27,12 @@ export function Footer() {
               <ul className="mt-4 space-y-2.5">
                 {navLinks.map((link) => (
                   <li key={link.href}>
-                    <Link
+                    <a
                       href={link.href}
                       className="text-sm text-white/70 transition-colors hover:text-white"
                     >
                       {link.label}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
